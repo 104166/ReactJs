@@ -10,7 +10,7 @@
     "prepublish": "NODE_ENV=production npm run lint && npm run transpile",
     "transpile": "rm -rf release && babel src -d release --ignore __tests__",
     "dev": "babel src --watch -d release --source-maps",
-    "examples": "webpack-dev-server --config examples/webpack.config --port 3000 --content-base examples",
+    "examples": "webpack-dev-server --config examples/webpack.config --port 3009 --content-base examples",
     "examples:build": "webpack -p --config examples/webpack.config",
     "gh-pages": "NODE_ENV=production npm run examples:build && gh-pages -n -d examples",
     "docgen": "react-docgen --pretty src > docs/docgen.json"
